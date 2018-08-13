@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Maths Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/mathgame.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+</head>
+
+<body>
+    <div id="gameArea">
+        <h1 id="modeName">Maths Quiz</h1>
+
+        <div id="startScreen">
+            <h3>Welcome to Maths Quiz.</h3>
+            <p>Select a mode from the dropdown menu and answer as many question as you can in 60 seconds.</p>
+            <p>Have Fun!</p>
+            Mode:
+            <select id="modeSelect">
+                <option value="add">Addition</option>
+                <option value="sub">Subtraction</option>
+                <option value="mul">Multiplication</option>
+                <option value="divi">Division</option>
+            </select>
+            <button class="button" id="start">Start</button>
+
+        </div>
+        <div id="gameOver">
+            <div id="scoreArea">
+                <div id="score">Correct :0</div>
+                <div id="timer">Time :60s </div>
+            </div>
+            <div id="playArea">
+                <div id="numberA"></div>
+                <div id="opSelect"></div>
+                <div id="numberB"></div>
+                <div id="equals">=</div>
+                <input type="number" id="inputA" />
+                <button class="button" id="next" onclick="check()">Next</button>
+            </div>
+        </div>
+        <button id="reset" class="button" value="Refresh Page" onClick="window.location.reload()">Reset</button>
+    </div>
+    <script src="js/mathgame.js"></script>
+</body>
+
+</html>
